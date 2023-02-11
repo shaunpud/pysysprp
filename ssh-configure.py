@@ -30,6 +30,9 @@ server.shell(
     commands=[
         "dpkg-reconfigure openssh-server",
     ],
+    _env={
+        "DEBIAN_FRONTEND": "noninteractive",
+    },
 )
 
 server.service(
