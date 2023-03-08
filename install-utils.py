@@ -5,6 +5,7 @@ apt.packages(
     name="Installing utilities",
     packages=[
         "curl",
+        "dnsutils",
         "git",
         "htop",
         "iptables",
