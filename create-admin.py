@@ -72,7 +72,12 @@ shopt -s histappend
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls -al'
-alias rm='rm -i'"""),
+alias lh='ll -h'
+alias rm='rm -i'
+
+alias digs='dig +short'
+alias icanhazip='curl ipv4.icanhazip.com'
+alias inst='dpkg --get-selections'"""),
     dest=f"/home/{administrator}/.bash_aliases",
     user=administrator,
     group=administrator,
