@@ -77,7 +77,11 @@ alias rm='rm -i'
 
 alias digs='dig +short'
 alias icanhazip='curl ipv4.icanhazip.com'
-alias inst='dpkg --get-selections'"""),
+alias inst='dpkg --get-selections'
+
+domip() { curl -vsH "Host: $1" $2 | less; }
+ipport() { curl -s "https://internetdb.shodan.io/$1" | jq; }
+wayback() { curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }"""),
     dest=f"/home/{administrator}/.bash_aliases",
     user=administrator,
     group=administrator,
