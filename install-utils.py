@@ -9,6 +9,7 @@ apt.packages(
         "git",
         "htop",
         "iptables",
+        "jq",
         "lftp",
         "lsb-release",
         "lsof",
