@@ -75,9 +75,11 @@ alias ll='ls -al'
 alias lh='ll -h'
 alias rm='rm -i'
 
+alias crsnic='whois -Hh whois.crsnic.net'
 alias digs='dig +short'
 alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections'
+alias whoisc='whois -h domaincheck.auda.org.au'
 
 domip() {{ curl -vsH "Host: $1" $2 | less; }}
 shoip() {{ curl -s "https://internetdb.shodan.io/$1" | jq; }}
