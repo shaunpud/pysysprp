@@ -8,10 +8,12 @@ if not sshport or int(sshport) < 1 or int(sshport) > 65535:
 files.put(
     _sudo=True,
     name="Creating ssh config",
-    src=StringIO(f"""Port {sshport}
+    src=StringIO(
+        f"""Port {sshport}
 PasswordAuthentication no
 PermitRootLogin no
-PubkeyAuthentication yes"""),
+PubkeyAuthentication yes"""
+    ),
     dest="/etc/ssh/sshd_config.d/custom.conf",
     mode=600,
 )
