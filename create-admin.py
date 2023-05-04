@@ -62,7 +62,7 @@ files.put(
     _sudo=True,
     name="Creating bash aliases",
     src=StringIO(
-        f"""HISTCONTROL=ignoreboth
+        """HISTCONTROL=ignoreboth
 HISTSIZE=100000
 HISTFILESIZE=200000
 
