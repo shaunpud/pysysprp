@@ -61,7 +61,8 @@ files.put(
 files.put(
     _sudo=True,
     name="Creating bash aliases",
-    src=StringIO(f"""HISTCONTROL=ignoreboth
+    src=StringIO(
+        f"""HISTCONTROL=ignoreboth
 HISTSIZE=100000
 HISTFILESIZE=200000
 
@@ -83,21 +84,21 @@ alias whoisc='whois -h domaincheck.auda.org.au'
 
 domip() {{ curl -vsH "Host: $1" $2 | less; }}
 shoip() {{ curl -s "https://internetdb.shodan.io/$1" | jq; }}
-wayback() {{ curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }}"""),
+wayback() {{ curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }}"""
+    ),
     dest=f"/home/{administrator}/.bash_aliases",
     user=administrator,
     group=administrator,
     mode=600,
 )
 
-for i, dotfile in enumerate(['.curlrc', '.wgetrc']):
-
+for i, dotfile in enumerate([".curlrc", ".wgetrc"]):
     files.put(
         _sudo=True,
         name=f"Creating {dotfile}",
         src=StringIO(
             "user-agent={0}{1}{0}".format(
-                "" if i else "\"",
+                "" if i else '"',
                 random.choice(useragents),
             ),
         ),
