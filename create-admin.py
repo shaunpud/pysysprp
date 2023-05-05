@@ -82,9 +82,9 @@ alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections'
 alias whoisc='whois -h domaincheck.auda.org.au'
 
-domip() {{ curl -vsH "Host: $1" $2 | less; }}
-shoip() {{ curl -s "https://internetdb.shodan.io/$1" | jq; }}
-wayback() {{ curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }}"""
+domip() { curl -vsH "Host: $1" $2 | less; }
+shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
+wayback() { curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }"""
     ),
     dest=f"/home/{administrator}/.bash_aliases",
     user=administrator,
