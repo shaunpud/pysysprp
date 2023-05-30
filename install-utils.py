@@ -23,6 +23,7 @@ apt.packages(
         "wget",
         "whois",
         "zip",
+        "zstd",
     ],
     latest=True,
     update=True,
