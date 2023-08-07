@@ -6,6 +6,7 @@ apt.packages(
     packages=[
         "build-essential",
         "pipx",
+        "pkg-config",
         "python3-dev",
         "python3-pip",
         "python3-venv",
