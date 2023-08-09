@@ -53,7 +53,7 @@ files.put(
     }}
 }}"""
     ),
-    dest=f"/opt/adminer/nginx.conf",
+    dest="/opt/adminer/nginx.conf",
 )
 
 files.link(
