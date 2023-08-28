@@ -1,4 +1,4 @@
-from pyinfra.operations import apt
+from pyinfra.operations import apt, server
 
 apt.packages(
     _sudo=True,
@@ -13,4 +13,11 @@ apt.packages(
     ],
     latest=True,
     update=True,
+)
+
+server.shell(
+    name="Ensure path pipx",
+    commands=[
+        "pipx ensurepath",
+    ],
 )
