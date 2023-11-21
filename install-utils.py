@@ -4,6 +4,7 @@ apt.packages(
     _sudo=True,
     name="Installing utilities",
     packages=[
+        "7zip",
         "curl",
         "dnsutils",
         "git",
