@@ -12,6 +12,7 @@ apt.packages(
         "iptables",
         "jq",
         "lftp",
+        "locate",
         "lsb-release",
         "lsof",
         "pigz",
