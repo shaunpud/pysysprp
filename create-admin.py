@@ -11,7 +11,7 @@ administrator = input("\nAdministrator: ")
 if not administrator or not re.match(r"^[a-z0-9-_]+$", administrator, flags=re.I):
     exit("Invalid Username")
 
-agentsdata = "https://raw.githubusercontent.com/Kikobeats/top-user-agents/master/index.json"
+agentsdata = "https://raw.githubusercontent.com/jnrbsn/user-agents/main/user-agents.json"
 useragents = json.loads(urlopen(agentsdata).read().decode())
 
 apt.packages(
