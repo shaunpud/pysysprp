@@ -14,7 +14,7 @@ PasswordAuthentication no
 PermitRootLogin no
 PubkeyAuthentication yes"""
     ),
-    dest="/etc/ssh/sshd_config.d/custom.conf",
+    dest="/etc/ssh/sshd_config.d/99-custom.conf",
     mode=600,
 )
 
