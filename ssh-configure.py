@@ -9,7 +9,8 @@ files.put(
     _sudo=True,
     name="Creating ssh config",
     src=StringIO(
-        f"""Port {sshport}
+        f"""AddressFamily inet
+Port {sshport}
 PasswordAuthentication no
 PermitRootLogin no
 PubkeyAuthentication yes"""
