@@ -81,6 +81,7 @@ alias digs='dig +short'
 alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections | grep -i'
 alias ports='sudo lsof -i -P -n | grep LISTEN'
+alias pwgen='pwgen -y 16 4'
 alias whoisc='whois -h domaincheck.auda.org.au'
 
 domip() { curl -vsH "Host: $1" $2 | less; }
