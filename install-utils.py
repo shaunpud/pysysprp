@@ -7,6 +7,7 @@ apt.packages(
         "7zip",
         "curl",
         "dnsutils",
+        "fd-find",
         "git",
         "htop",
         "iptables",
