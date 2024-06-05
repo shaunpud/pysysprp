@@ -77,6 +77,7 @@ alias lh='ll -h'
 alias rm='rm -i'
 
 alias crsnic='whois -Hh whois.crsnic.net'
+alias diff='diff --color'
 alias digs='dig +short'
 alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections | grep -i'
