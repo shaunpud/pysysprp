@@ -18,6 +18,7 @@ apt.packages(
         "lsof",
         "pigz",
         "pwgen",
+        "rename",
         "rsync",
         "screen",
         "sudo",
