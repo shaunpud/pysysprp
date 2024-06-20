@@ -82,6 +82,7 @@ alias digs='dig +short'
 alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections | grep -i'
 alias ports='sudo lsof -i -P -n | grep LISTEN'
+alias rsync='rsync --progress'
 
 domip() { curl -vsH "Host: $1" $2 | less; }
 shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
