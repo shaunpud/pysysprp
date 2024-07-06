@@ -5,7 +5,7 @@ apt.packages(
     name="Installing mysql client/dev",
     packages=[
         "default-libmysqlclient-dev",
-        "default-mysql-client",
+        "mariadb-backup",
     ],
     latest=True,
     update=True,
