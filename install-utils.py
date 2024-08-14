@@ -16,6 +16,7 @@ apt.packages(
         "locate",
         "lsb-release",
         "lsof",
+        "mtr",
         "pigz",
         "pwgen",
         "rename",
