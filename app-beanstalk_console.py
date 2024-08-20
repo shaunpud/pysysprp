@@ -39,6 +39,9 @@ files.put(
     access_log /var/log/nginx/beanstalk_console-access.log combined;
     error_log /var/log/nginx/beanstalk_console-error.log;
 
+    # allow 127.0.0.1;
+    # deny all;
+
     location / {{
         try_files $uri $uri/ =404;
     }}
