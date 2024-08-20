@@ -62,7 +62,7 @@ files.put(
 files.link(
     _sudo=True,
     name="Creating symlink",
-    path=f"/etc/nginx/sites-enabled/{hostname}",
+    path=f"/etc/nginx/sites-enabled/{hostname}.conf",
     target="/opt/adminer/nginx.conf",
 )
 
