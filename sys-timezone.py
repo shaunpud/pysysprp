@@ -15,3 +15,11 @@ server.shell(
         "timedatectl set-timezone Australia/Perth",
     ],
 )
+
+server.shell(
+    _sudo=True,
+    name="Setting lang",
+    commands=[
+        "localectl set-locale LANG=C.UTF-8",
+    ],
+)
