@@ -22,6 +22,7 @@ apt.packages(
         "rename",
         "rsync",
         "screen",
+        "sshfs",
         "sudo",
         "telnet",
         "unzip",
