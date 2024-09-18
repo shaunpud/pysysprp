@@ -88,6 +88,7 @@ alias show='apt-cache show'
 domip() { curl -vsH "Host: $1" $2 | less; }
 shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
 sshmnt() { mkdir /tmp/$1 && sshfs $1:$2 /tmp/$1; }
+torget() { curl --socks5-hostname localhost:9050 $1; }
 wayback() { curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }
 whoisc() { echo -n "$1 "; whois -h domaincheck.auda.org.au $1; }"""
     ),
