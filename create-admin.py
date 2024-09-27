@@ -81,7 +81,7 @@ alias diff='diff --color'
 alias digs='dig +short'
 alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections | grep -i'
-alias ports='sudo lsof -i -P -n | grep LISTEN'
+alias ports='sudo lsof -i -P -n +c0 | grep LISTEN'
 alias rsync='rsync --progress'
 alias show='apt-cache show'
 
