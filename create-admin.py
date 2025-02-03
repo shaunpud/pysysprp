@@ -62,9 +62,9 @@ files.put(
     _sudo=True,
     name="Creating bash aliases",
     src=StringIO(
-        """HISTCONTROL=ignoreboth
-HISTSIZE=100000
-HISTFILESIZE=200000
+        """export HISTCONTROL=ignoreboth
+export HISTSIZE=100000
+export HISTFILESIZE=200000
 
 shopt -s checkwinsize
 shopt -s globstar
@@ -79,7 +79,7 @@ alias rm='rm -i'
 alias crsnic='whois -Hh whois.crsnic.net'
 alias diff='diff --color'
 alias digs='dig +short'
-alias dockerup='docker-compose pull && docker-compose up --force-recreate --build -d && docker image prune -f'
+alias dkrupg='docker-compose pull && docker-compose up --force-recreate --build -d && docker image prune -f'
 alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections | grep -i'
 alias ports='sudo lsof -i -P -n +c0 | grep LISTEN'
