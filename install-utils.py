@@ -24,6 +24,7 @@ apt.packages(
         "screen",
         "sshfs",
         "sudo",
+        "supervisor",
         "telnet",
         "unzip",
         "wget",
