@@ -5,6 +5,7 @@ apt.packages(
     name="Installing nginx",
     packages=[
         "apache2-utils",
+        "goaccess",
         "nginx",
     ],
     latest=True,
