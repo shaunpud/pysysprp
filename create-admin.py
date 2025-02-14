@@ -86,11 +86,11 @@ alias inst='dpkg --get-selections | grep -i'
 alias ports='sudo lsof -i -P -n +c0 | grep LISTEN'
 alias rsync='rsync --progress'
 alias show='apt-cache show'
+alias torget='curl --socks5-hostname localhost:9050'
 
 domip() { curl -vsH "Host: $1" $2 | less; }
 shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
 sshmnt() { mkdir -p /tmp/$1 && sshfs $1:$2 /tmp/$1; }
-torget() { curl --socks5-hostname localhost:9050 $1; }
 wayback() { curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }
 whoisc() { echo -n "$1 "; whois -h domaincheck.auda.org.au $1; }"""
     ),
