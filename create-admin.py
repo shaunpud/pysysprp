@@ -92,6 +92,7 @@ domip() { curl -vsH "Host: $1" $2 | less; }
 shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
 sshmnt() { mkdir -p /tmp/$1 && sshfs $1:$2 /tmp/$1; }
 wayback() { curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }
+whois() { /usr/bin/whois "$@" | awk '/>>>/{exit} {print}'; }
 whoisc() { echo -n "$1 "; whois -h domaincheck.auda.org.au $1; }"""
     ),
     dest=f"/home/{administrator}/.bash_aliases",
