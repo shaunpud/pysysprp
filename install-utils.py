@@ -5,6 +5,7 @@ apt.packages(
     name="Installing utilities",
     packages=[
         "7zip",
+        "cron",
         "curl",
         "dnsutils",
         "fd-find",
