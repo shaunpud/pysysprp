@@ -18,6 +18,7 @@ apt.packages(
         "lsb-release",
         "lsof",
         "mtr",
+        "nmap",
         "pigz",
         "pwgen",
         "rename",
