@@ -20,13 +20,6 @@ files.download(
     dest="/opt/adminer/public/index.php",
 )
 
-files.download(
-    _sudo=True,
-    name="Downloading dracula skin",
-    src="https://raw.githubusercontent.com/vrana/adminer/master/designs/dracula/adminer.css",
-    dest="/opt/adminer/public/adminer.css",
-)
-
 files.put(
     _sudo=True,
     name="Creating nginx config",
