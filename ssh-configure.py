@@ -10,9 +10,12 @@ files.put(
     name="Creating ssh config",
     src=StringIO(
         f"""AddressFamily inet
-Port {sshport}
+DebianBanner no
+LoginGraceTime 5s
+MaxAuthTries 1
 PasswordAuthentication no
 PermitRootLogin no
+Port {sshport}
 PubkeyAuthentication yes"""
     ),
     dest="/etc/ssh/sshd_config.d/00-custom.conf",
