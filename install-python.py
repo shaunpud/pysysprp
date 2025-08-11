@@ -5,6 +5,7 @@ apt.packages(
     name="Installing python",
     packages=[
         "build-essential",
+        "cargo",
         "pipx",
         "pkg-config",
         "python-is-python3",
