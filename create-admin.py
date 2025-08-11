@@ -93,6 +93,7 @@ shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
 sshmnt() { mkdir -p /tmp/$1 && sshfs $1:$2 /tmp/$1; }
 wayback() { curl -s "http://web.archive.org/cdx/search/cdx?url=$1&matchType=domain&collapse=urlkey&fl=timestamp,original" | sort -ru; }
 whois() { /usr/bin/whois "$@" | awk '/>>>/{exit} {print}'; }
+whoisa() { curl -s "https://audapublic.azurewebsites.net/api/public/avail/$(cut -d'.' -f1 <<<"$1")" | jq -r '.domainList[] | "\(.name): \(.avail | if . then "\u001b[32mAvailable\u001b[0m" else "\u001b[31mRegistered\u001b[0m" end)"'; }
 whoisc() { echo -n "$1 "; whois -h domaincheck.auda.org.au $1; }"""
     ),
     dest=f"/home/{administrator}/.bash_aliases",
