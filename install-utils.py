@@ -5,6 +5,8 @@ apt.packages(
     name="Installing utilities",
     packages=[
         "7zip",
+        "batcat",
+        "btop",
         "cron",
         "curl",
         "dnsutils",
