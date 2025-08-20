@@ -5,7 +5,7 @@ apt.packages(
     name="Installing utilities",
     packages=[
         "7zip",
-        "batcat",
+        "bat",
         "btop",
         "cron",
         "curl",
