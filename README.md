@@ -2,6 +2,7 @@ Custom scripts for [pyinfra](https://github.com/Fizzadar/pyinfra)
 
 ```bash
 pipx install pyinfra==2.9.2
+pipx inject pyinfra 'setuptools<82.0.0' --force
 ```
 
 ```bash
