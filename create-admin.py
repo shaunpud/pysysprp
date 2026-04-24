@@ -85,7 +85,6 @@ alias inst='dpkg --get-selections | grep -i'
 alias ports='sudo lsof -i -P -n +c0 | grep LISTEN'
 alias rsync='rsync --progress'
 alias show='apt-cache show'
-alias torget='curl --socks5-hostname localhost:9050'
 
 domip() { curl -vsH "Host: $1" $2 | less; }
 shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
