@@ -77,6 +77,7 @@ alias ll='ls -al'
 alias lh='ll -h'
 alias rm='rm -i'
 
+alias acs='apt-cache search'
 alias crsnic='whois -Hh whois.crsnic.net'
 alias diff='diff --color'
 alias digs='dig +short'
@@ -84,7 +85,6 @@ alias icanhazip='curl ipv4.icanhazip.com'
 alias inst='dpkg --get-selections | grep -i'
 alias ports='sudo lsof -i -P -n +c0 | grep LISTEN'
 alias rsync='rsync --progress'
-alias show='apt-cache show'
 
 domip() { curl -vsH "Host: $1" $2 | less; }
 shoip() { curl -s "https://internetdb.shodan.io/$1" | jq; }
